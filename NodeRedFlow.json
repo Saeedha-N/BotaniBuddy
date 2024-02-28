@@ -1,0 +1,1164 @@
+[
+    {
+        "id": "e4f660fd49c00876",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3d34901358e8fc4b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1f98979f4e9a1c1b",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b0eb3e9e8d3e861d",
+        "type": "ui_tab",
+        "name": "Enviornment Condition",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6636e913f71d5d7b",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#5b0888",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#08811c",
+                "baseFont": "Trebuchet MS,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#3a7529",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0f6725",
+                    "value": "#3a7529",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0f6725",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#56ae3d",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#3a7529",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "ENIGMA",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 5,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "8954b1ff4fd30ab1",
+        "type": "ui_group",
+        "name": "TEMPERATURE",
+        "tab": "b0eb3e9e8d3e861d",
+        "order": 1,
+        "disp": false,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "744bbac2f73b7885",
+        "type": "mqtt-broker",
+        "name": "MQTT in",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "25236b8afb422172",
+        "type": "mqtt-broker",
+        "name": "Hivemq",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "be98b8180ba33062",
+        "type": "ui_group",
+        "name": "HUMIDITY",
+        "tab": "b0eb3e9e8d3e861d",
+        "order": 2,
+        "disp": false,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e775702e682a8520",
+        "type": "ui_group",
+        "name": "HEAT INDEX",
+        "tab": "b0eb3e9e8d3e861d",
+        "order": 5,
+        "disp": false,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9fb631fda652399c",
+        "type": "ui_group",
+        "name": "SOIL MOISTURE",
+        "tab": "491e7fb6593fd007",
+        "order": 1,
+        "disp": false,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "491e7fb6593fd007",
+        "type": "ui_tab",
+        "name": "Plant Condition",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8ea68a22d211e587",
+        "type": "ui_group",
+        "name": "CONDITION",
+        "tab": "491e7fb6593fd007",
+        "order": 4,
+        "disp": false,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "686ebfbecb0c52a7",
+        "type": "ui_spacer",
+        "z": "3d34901358e8fc4b",
+        "name": "spacer",
+        "group": "8954b1ff4fd30ab1",
+        "order": 1,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "b97363c3bf6b0ce4",
+        "type": "ui_spacer",
+        "z": "3d34901358e8fc4b",
+        "name": "spacer",
+        "group": "be98b8180ba33062",
+        "order": 1,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "1babba5485e40406",
+        "type": "ui_spacer",
+        "z": "3d34901358e8fc4b",
+        "name": "spacer",
+        "group": "e775702e682a8520",
+        "order": 1,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "245bf17202d4575b",
+        "type": "node-red-contrib-whatsapp-cmb-account",
+        "name": "6076627"
+    },
+    {
+        "id": "5f0d3e77f466a5d7",
+        "type": "mqtt in",
+        "z": "e4f660fd49c00876",
+        "name": "MQTT data in",
+        "topic": "EnigmaSmartPot",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "25236b8afb422172",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 60,
+        "wires": [
+            [
+                "9a0359403de92d54",
+                "3af62e332afa3374",
+                "1feb80e9b36338ec",
+                "16a9a09eccb2379e"
+            ]
+        ]
+    },
+    {
+        "id": "fcb66281b9807777",
+        "type": "ui_text",
+        "z": "e4f660fd49c00876",
+        "group": "8954b1ff4fd30ab1",
+        "order": 4,
+        "width": 6,
+        "height": 3,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}} °C",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+        "fontSize": "50",
+        "color": "#7ce85e",
+        "x": 790,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "5ce94e213835a3bf",
+        "type": "change",
+        "z": "e4f660fd49c00876",
+        "name": "Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.EnvTemp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 60,
+        "wires": [
+            [
+                "fcb66281b9807777",
+                "fddc6b029caf9e0b",
+                "598e12e2af56af09",
+                "eec22488bbf30693"
+            ]
+        ]
+    },
+    {
+        "id": "130823081d4416f4",
+        "type": "change",
+        "z": "e4f660fd49c00876",
+        "name": "Humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.EnvHum",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 420,
+        "wires": [
+            [
+                "21681ee886ee67a0",
+                "48d0fdfdf8200cd2",
+                "368840b0bbf96166",
+                "47f08e2633590363"
+            ]
+        ]
+    },
+    {
+        "id": "21681ee886ee67a0",
+        "type": "ui_text",
+        "z": "e4f660fd49c00876",
+        "group": "be98b8180ba33062",
+        "order": 2,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "Humidity",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Trebuchet MS,Helvetica,sans-serif",
+        "fontSize": "30",
+        "color": "#bbbd3d",
+        "x": 800,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "1b9d968d1cea6ff5",
+        "type": "change",
+        "z": "e4f660fd49c00876",
+        "name": "Heat Index",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.HeatIndex",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 740,
+        "wires": [
+            [
+                "acb57c929d714a8e",
+                "8bb2d7d9fa75b9b4",
+                "849efa5bb149ff12"
+            ]
+        ]
+    },
+    {
+        "id": "acb57c929d714a8e",
+        "type": "ui_text",
+        "z": "e4f660fd49c00876",
+        "group": "e775702e682a8520",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "name": "",
+        "label": "Heat Index",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Trebuchet MS,Helvetica,sans-serif",
+        "fontSize": "30",
+        "color": "#bbbd3d",
+        "x": 810,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "48d0fdfdf8200cd2",
+        "type": "ui_template",
+        "z": "e4f660fd49c00876",
+        "group": "be98b8180ba33062",
+        "name": "Humidity img",
+        "order": 3,
+        "width": 3,
+        "height": 3,
+        "format": "<img src=\"https://drive.google.com/uc?id=1gnwK7UIDZvYJGXvsCZIPR3Lq0fihCvoQ\" alt=\"Google Drive Image\" style=\"width: 75%;\">",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 810,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3aaf1b0ace4687e1",
+        "type": "ui_template",
+        "z": "e4f660fd49c00876",
+        "group": "8954b1ff4fd30ab1",
+        "name": "Temperature img",
+        "order": 3,
+        "width": 2,
+        "height": 3,
+        "format": "<div ng-if=\"msg.payload === 1\">\n    <img src=\"https://drive.google.com/uc?id=1WXnHcWlWhesiQuJEjSPTGkFsCQLyMtiT\" style=\"width: 100%;background: transparent;\">\n</div>\n<div ng-if=\"msg.payload === 2\">\n    <img src=\"https://drive.google.com/uc?id=1HQ5DF1dq8EuJNN7y0B8E1y8Al_UDvAGy\" style=\"width: 75%;\">\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1030,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fddc6b029caf9e0b",
+        "type": "function",
+        "z": "e4f660fd49c00876",
+        "name": "function 7",
+        "func": "var x = msg.payload;\n\nif (x >= 25) {\n    return { payload: 1 };\n} else  {\n    return { payload: 2};\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 200,
+        "wires": [
+            [
+                "3aaf1b0ace4687e1"
+            ]
+        ]
+    },
+    {
+        "id": "8bb2d7d9fa75b9b4",
+        "type": "ui_gauge",
+        "z": "e4f660fd49c00876",
+        "name": "",
+        "group": "e775702e682a8520",
+        "order": 3,
+        "width": 7,
+        "height": 6,
+        "gtype": "gage",
+        "title": "",
+        "label": "",
+        "format": "{{msg.payload}} °C",
+        "min": "20",
+        "max": "60",
+        "colors": [
+            "#e7fd3f",
+            "#f59b00",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 790,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "849efa5bb149ff12",
+        "type": "function",
+        "z": "e4f660fd49c00876",
+        "name": "function 8",
+        "func": "var hi = msg.payload;\n\nif (hi <=32 ) {\n    return { payload: \"Caution\" };\n} else if (32 < hi && hi <=41 ){\n    return { payload: \"Extreme Caution\" };\n} else if (41 < hi && hi <= 54) {\n    return { payload: \"Danger\" };\n} else if (54 < hi ) {\n    return { payload: \"Extreme Danger\" };\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 780,
+        "wires": [
+            [
+                "0e918aae0c288640"
+            ]
+        ]
+    },
+    {
+        "id": "0e918aae0c288640",
+        "type": "ui_text",
+        "z": "e4f660fd49c00876",
+        "group": "e775702e682a8520",
+        "order": 4,
+        "width": 7,
+        "height": 2,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "20",
+        "color": "#ff5757",
+        "x": 990,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "598e12e2af56af09",
+        "type": "ui_chart",
+        "z": "e4f660fd49c00876",
+        "name": "",
+        "group": "8954b1ff4fd30ab1",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature Variation in Last 24 Hours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 890,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "368840b0bbf96166",
+        "type": "ui_chart",
+        "z": "e4f660fd49c00876",
+        "name": "",
+        "group": "be98b8180ba33062",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity Variation in Last 24 Hours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 880,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eec22488bbf30693",
+        "type": "ui_text",
+        "z": "e4f660fd49c00876",
+        "group": "8954b1ff4fd30ab1",
+        "order": 2,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "Temperature",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Trebuchet MS,Helvetica,sans-serif",
+        "fontSize": "30",
+        "color": "#bbbd3d",
+        "x": 810,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "47f08e2633590363",
+        "type": "ui_text",
+        "z": "e4f660fd49c00876",
+        "group": "be98b8180ba33062",
+        "order": 4,
+        "width": 5,
+        "height": 3,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}} %",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+        "fontSize": "50",
+        "color": "#7ce85e",
+        "x": 790,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9a0359403de92d54",
+        "type": "link out",
+        "z": "e4f660fd49c00876",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "853419fd4f806489"
+        ],
+        "x": 125,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "3af62e332afa3374",
+        "type": "delay",
+        "z": "e4f660fd49c00876",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 300,
+        "y": 60,
+        "wires": [
+            [
+                "5ce94e213835a3bf"
+            ]
+        ]
+    },
+    {
+        "id": "1feb80e9b36338ec",
+        "type": "delay",
+        "z": "e4f660fd49c00876",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 300,
+        "y": 420,
+        "wires": [
+            [
+                "130823081d4416f4"
+            ]
+        ]
+    },
+    {
+        "id": "16a9a09eccb2379e",
+        "type": "delay",
+        "z": "e4f660fd49c00876",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 300,
+        "y": 740,
+        "wires": [
+            [
+                "1b9d968d1cea6ff5"
+            ]
+        ]
+    },
+    {
+        "id": "c2b75a8e7d65ac63",
+        "type": "change",
+        "z": "3d34901358e8fc4b",
+        "name": "Soil Moisture",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.SoilMoisture",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 80,
+        "wires": [
+            [
+                "28e5da2b0f76f1be",
+                "24a8a3f47d925ab6",
+                "5e0f5f4eb668461b",
+                "46b8d24c2d2c05e8",
+                "a7b1a6aa2f03494b",
+                "e739bd71b0aead80",
+                "ddbff52afa54addd"
+            ]
+        ]
+    },
+    {
+        "id": "28e5da2b0f76f1be",
+        "type": "ui_text",
+        "z": "3d34901358e8fc4b",
+        "group": "9fb631fda652399c",
+        "order": 1,
+        "width": 8,
+        "height": 1,
+        "name": "",
+        "label": "Soil Moisture",
+        "format": "",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Trebuchet MS,Helvetica,sans-serif",
+        "fontSize": "30",
+        "color": "#b5bd3d",
+        "x": 830,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "24a8a3f47d925ab6",
+        "type": "ui_template",
+        "z": "3d34901358e8fc4b",
+        "group": "9fb631fda652399c",
+        "name": "Soil moisture img",
+        "order": 2,
+        "width": 2,
+        "height": 3,
+        "format": "<img src=\"https://drive.google.com/uc?id=1unctCi9hNXvn8-NOuYHmXXaZBQApeoP5\" alt=\"Image Description\" style=\"width: 100%;\">\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 850,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e0f5f4eb668461b",
+        "type": "ui_chart",
+        "z": "3d34901358e8fc4b",
+        "name": "",
+        "group": "9fb631fda652399c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Soil Moisture Variation in Last 24 Hours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 920,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "853419fd4f806489",
+        "type": "link in",
+        "z": "3d34901358e8fc4b",
+        "name": "link in 1",
+        "links": [
+            "9a0359403de92d54"
+        ],
+        "x": 145,
+        "y": 80,
+        "wires": [
+            [
+                "42e83d1d2c98ad1b"
+            ]
+        ]
+    },
+    {
+        "id": "3b83b986140b88f1",
+        "type": "ui_text",
+        "z": "3d34901358e8fc4b",
+        "group": "8ea68a22d211e587",
+        "order": 1,
+        "width": 7,
+        "height": 4,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Trebuchet MS,Helvetica,sans-serif",
+        "fontSize": "36",
+        "color": "#ade6e0",
+        "x": 1050,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "46b8d24c2d2c05e8",
+        "type": "function",
+        "z": "3d34901358e8fc4b",
+        "name": "function 9",
+        "func": "var sm = msg.payload;\n\nif (sm <= 20) {\n    return { payload: \"Low Moisture\" };\n} else if (20 < sm && sm <= 40) {\n    return { payload: \"Optimal Moisture \" };\n} else if (50 < sm) {\n    return { payload: \"Excess Moisture\" };\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 280,
+        "wires": [
+            [
+                "3b83b986140b88f1"
+            ]
+        ]
+    },
+    {
+        "id": "a7b1a6aa2f03494b",
+        "type": "ui_text",
+        "z": "3d34901358e8fc4b",
+        "group": "9fb631fda652399c",
+        "order": 3,
+        "width": 6,
+        "height": 3,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}%",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Trebuchet MS,Helvetica,sans-serif",
+        "fontSize": "50",
+        "color": "#7ce85e",
+        "x": 810,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e739bd71b0aead80",
+        "type": "function",
+        "z": "3d34901358e8fc4b",
+        "name": "function 10",
+        "func": "var sm = msg.payload;\n\nif (sm <= 20) {\n    return { payload: \"Water the plant now!\" };\n} else if (20 < sm && sm <= 40) {\n    return { payload: \"No immediate action required.\" };\n} else if (50 < sm) {\n    return { payload: \"Wait before watering again.\" };\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 340,
+        "wires": [
+            [
+                "887c86f8ef72a2d4"
+            ]
+        ]
+    },
+    {
+        "id": "887c86f8ef72a2d4",
+        "type": "ui_text",
+        "z": "3d34901358e8fc4b",
+        "group": "8ea68a22d211e587",
+        "order": 2,
+        "width": 7,
+        "height": 5,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Narrow,Nimbus Sans L,sans-serif",
+        "fontSize": "22",
+        "color": "#29ffbf",
+        "x": 1050,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ddbff52afa54addd",
+        "type": "link out",
+        "z": "3d34901358e8fc4b",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "e3595bfc4b8efbcb"
+        ],
+        "x": 775,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "42e83d1d2c98ad1b",
+        "type": "delay",
+        "z": "3d34901358e8fc4b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "c2b75a8e7d65ac63"
+            ]
+        ]
+    },
+    {
+        "id": "799e0dc9ed9ffef7",
+        "type": "node-red-contrib-whatsapp-cmb-send-message",
+        "z": "1f98979f4e9a1c1b",
+        "name": "",
+        "credtype": "account",
+        "account": "245bf17202d4575b",
+        "text": "payload",
+        "phonenumbervalue": "",
+        "apikeyvalue": "",
+        "apikeyinputtypemessage": "msg",
+        "phonenumberinputtypemessage": "msg",
+        "inputtypemessage": "msg",
+        "rejectssl": false,
+        "x": 820,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3595bfc4b8efbcb",
+        "type": "link in",
+        "z": "1f98979f4e9a1c1b",
+        "name": "link in 2",
+        "links": [
+            "ddbff52afa54addd"
+        ],
+        "x": 215,
+        "y": 140,
+        "wires": [
+            [
+                "a965f9f3b67676c7"
+            ]
+        ]
+    },
+    {
+        "id": "a965f9f3b67676c7",
+        "type": "function",
+        "z": "1f98979f4e9a1c1b",
+        "name": "function 11",
+        "func": "var sm = msg.payload;\n\nif (sm <= 5) {\n    return { payload: \"Alert: I might die soon!\" };\n} else if (5 < sm && sm <= 10) {\n    return { payload: \"Hey, I am still ALIVE. Help me\" };\n} else if (10 < sm && sm <= 15) {\n    return { payload: \"Do you care? I'm thirsty. I need water\" };\n} else if (15 < sm && sm <= 25) {\n    return { payload: \"I'm feeling great!\" };\n} else if (25 < sm && sm <= 45) {\n    return { payload: \"Tummy FULL. I'm very satisfied. Thank you.\" };\n} else if (45 < sm) {\n    return { payload: \"Alert: I'm extremely full. I might puke.\" };\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "91fc0ebd023a731d"
+            ]
+        ]
+    },
+    {
+        "id": "91fc0ebd023a731d",
+        "type": "delay",
+        "z": "1f98979f4e9a1c1b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 600,
+        "y": 140,
+        "wires": [
+            [
+                "799e0dc9ed9ffef7"
+            ]
+        ]
+    }
+]
